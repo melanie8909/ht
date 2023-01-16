@@ -1,0 +1,298 @@
+<!doctype html>
+<html lang="zh-Hant-TW">
+<head>
+	<!-- Required meta tags -->
+	<meta charset="utf-8">
+	<!-- <meta name="viewport" content="width=device-width, initial-scale=1"> -->
+	<meta name="viewport" content="width=1440px, height=700px, initial-scale=1, minimum-scale=0.5, maximum-scale=1.0, user-scalable=yes">
+	<!-- Bootstrap CSS -->
+	<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+	<link rel="stylesheet" href="css/slick.css">
+	<link rel="stylesheet" href="css/slick-theme.css">
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.4.0/css/font-awesome.min.css" />
+	<link rel="stylesheet" href="css/style.css">
+	<title>數體健_後台_二階_1</title>
+</head>
+<body>
+ 	<nav class="navbar-ht navbar sticky-top navbar-expand-lg navbar-light bg-light">
+		<div class="container">
+			<a class="navbar-brand" href="index.html">
+				<img src="img/logo.png">
+			</a>
+			<div class="d-flex gap-4 ms-3 me-auto text-secondary">
+				<span>會員姓名｜王〇〇</span> 	<span>會員手機｜0900-123-123</span>
+			</div>
+			<!-- 漢堡按鈕 begin -->
+			<button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
+		      <span class="navbar-toggler-icon"></span>
+		    </button>
+			<!-- 漢堡按鈕 end -->
+
+			<div class="ml-a flex-lg-grow-0 collapse navbar-collapse" id="navbarNavAltMarkup">
+				<ul class="navbar-nav">
+					<li class="nav-item">
+						<a class="nav-link nav-link-ht" href="##">數體健APP</a>
+					</li>
+					<li class="nav-item">
+						<a class="nav-link nav-link-ht" href="index.html#EQPT">生理量測儀器</a>
+					</li>
+					<li class="nav-item">
+						<a class="nav-link nav-link-ht" href="https://www.yesnet.com.tw" target="_blank">躍獅藥師線上YesOnLine</a>
+					</li>
+					<li class="nav-item">
+						<a class="nav-link nav-link-ht" href="https://www.digimed.tw/#_1" target="_blank">關於我們</a>
+					</li>
+				</ul>
+			</div>
+		</div>
+	</nav>
+
+	<!-- Content -->
+	<section class="section section-content">
+		<div class="container">
+			<div class="row">
+				<div class="col-12">
+					<div class="row justify-content-center">
+
+						<div class="col-10">
+
+							<!-- 檢測項目介紹 -->
+							<div class="col-12 mb-3">
+								<div class="row">
+									<div class="col-5">
+										<div class="row  py-3 align-items-center">
+											<div class="col-3">
+												<img class="w-100" src="img/icons/icon_1_dark.png" alt="心率">
+											</div>
+											<div class="col-6">
+												<p class=" mb-0 h5">心率</p>
+												<p class="mb-0 text-black-50">--</p>
+											</div>
+											<div class="col-3 text-end">
+												<p class="mb-0"><span class="text-danger">--</span> bpm</p>
+												<p class="mb-0 text-black-50">心率</p>
+											</div>	
+										</div>
+										<img class="img-fluid" src="https://api.fnkr.net/testimg/458x100/CCCCCC/FFF/?text=Heart%20Rate%20Bar%20Chart">
+									</div>
+									<div class="col-7">
+										<div class="func-intro">
+											<div class="h4">了解心律數據分析</div>
+											<p class="mb-0">靜態心律：靜止狀態下每分鐘心跳次數一般為60~100次</p>
+											<p class="mb-0">動態心律：根據心率變化來判斷身體運動狀態</p>
+										</div>
+									</div>
+								</div>
+							</div>
+
+
+							<!-- 區間按鈕選項 -->
+							<div class="col-12 mb-3">
+								<div class="btn-group w-100" role="group">
+									<button type="button" class="btn btn-outline-ht active">近7天</button>
+  									<button type="button" class="btn btn-outline-ht">近1月</button>
+  									<button type="button" class="btn btn-outline-ht">近3月</button>
+  									<button type="button" class="btn btn-outline-ht">近1年</button>
+  									<button class="btn btn-outline-ht" data-bs-toggle="modal" data-bs-target="#customIntervalToggle" data-bs-dismiss="modal">自訂量測區間</button>
+								</div>
+							</div>
+
+							<!-- 檢測項目圖表 -->
+							<div class="col-12 mb-5">
+								<img class="img-fluid" src="https://api.fnkr.net/testimg/1200x400/CCCCCC/FFF/?text=Heart%20Rate%20Bar%20Chart">
+							</div>
+
+							<!-- 檢測項目表格 -->
+							<div class="col-12 mb-3">
+								<p class="h5 text-ht text-center">量測紀錄</p>
+
+								<table class="table table-striped table-hover">
+								  <thead>
+								    <tr>
+								      <th scope="col" class="w-50">心率</th>
+								      <th scope="col">紀錄時間</th>
+								      <th scope="col">手錶數值</th>
+								    </tr>
+								  </thead>
+								  <tbody>
+								    <tr>
+								      <td><big class="text-ht">63</big> <small>次/分</small></td>
+								      <td>2022-12-22 16:40</td>
+								      <td>手錶數值</td>
+								    </tr>
+								    <tr>
+								      <td><big class="text-ht">63</big> <small>次/分</small></td>
+								      <td>2022-12-22 16:40</td>
+								      <td>手錶數值</td>
+								    </tr>
+								    <tr>
+								      <td><big class="text-ht">63</big> <small>次/分</small></td>
+								      <td>2022-12-22 16:40</td>
+								      <td>手錶數值</td>
+								    </tr>
+								    <tr>
+								      <td><big class="text-ht">63</big> <small>次/分</small></td>
+								      <td>2022-12-22 16:40</td>
+								      <td>手錶數值</td>
+								    </tr>
+								    <tr>
+								      <td><big class="text-ht">63</big> <small>次/分</small></td>
+								      <td>2022-12-22 16:40</td>
+								      <td>手錶數值</td>
+								    </tr>
+								    <tr>
+								      <td><big class="text-ht">63</big> <small>次/分</small></td>
+								      <td>2022-12-22 16:40</td>
+								      <td>手錶數值</td>
+								    </tr>
+								    <tr>
+								      <td><big class="text-ht">63</big> <small>次/分</small></td>
+								      <td>2022-12-22 16:40</td>
+								      <td>手錶數值</td>
+								    </tr>
+								    <tr>
+								      <td><big class="text-ht">63</big> <small>次/分</small></td>
+								      <td>2022-12-22 16:40</td>
+								      <td>手錶數值</td>
+								    </tr>
+								    <tr>
+								      <td><big class="text-ht">63</big> <small>次/分</small></td>
+								      <td>2022-12-22 16:40</td>
+								      <td>手錶數值</td>
+								    </tr>
+								  </tbody>
+								</table>
+							</div>
+						</div>
+
+						<div class="col-2">
+
+							<!-- 其他關聯會員下拉選單 -->
+							<!-- <div class="position-sticky" style="top:100px"> -->
+							<div>
+								<label class="h6">其他關聯會員</label>
+								<select class="form-select">
+									<option selected>請選擇會員</option>
+									<option value="1">王〇〇</option>
+									<option value="2">林〇〇</option>
+									<option value="3">陳〇〇</option>
+								</select>
+							</div>
+
+							<!-- 手動新增數據 Sticky -->
+							<a class="btn btn-danger btn-lg btn-add w-100" data-bs-toggle="modal" href="#addToggle" role="button"> <i class="fa fa-plus-circle"></i> 手動新增數據</a>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</section>
+
+
+	<!-- Footer -->
+	<footer class="footer">
+		<div class="container">
+			<div class="row">
+				<div class="col-12">
+					<a href="https://www.digimed.tw/#_6" target="_blank">敏盛醫療體系</a>
+					<a href="https://www.digimed.tw/#_7" target="_blank">聯絡我們</a>
+				</div>
+			</div>
+		</div>
+	</footer>
+
+
+	<!-- modal begin -->
+
+		<!-- 自訂量測區間 -->
+		<div class="modal fade" id="customIntervalToggle" aria-hidden="true" aria-labelledby="customIntervalToggleLabel" tabindex="-1">
+		  <div class="modal-dialog modal-dialog-centered">
+		    <div class="modal-content">
+		    	<div class="modal-body">
+					<div class="container-fluid">
+						<div class="row justify-content-center">
+							<div class="col-12 p-5">
+								<p class="h5 text-ht">新增查詢區間</p>
+								<label class="mt-3">我想從</label>
+								<input type="date" class="form-control"/>
+								<label class="mt-3">到</label>
+								<input type="date" class="form-control"/>
+								<a class="btn btn-ht w-100 mt-3" href="backstage_2_2.html">確認查詢</a>
+							</div>
+						</div>
+					</div>
+				</div>
+		    </div>
+		  </div>
+		</div>
+
+		<!-- 手動新增數據按鈕 -->
+		<div class="modal fade" id="addToggle" aria-hidden="true" aria-labelledby="addToggleLabel" tabindex="-1">
+		  <div class="modal-dialog modal-dialog-centered">
+		    <div class="modal-content">
+		    	<div class="modal-body">
+					<div class="container-fluid">
+						<div class="row justify-content-center">
+							<div class="col-12 p-5">
+								<a class="btn btn-lg btn-ht w-100" data-bs-target="#addData" data-bs-toggle="modal" data-bs-dismiss="modal">輸入新增數據</a>
+								<a class="btn btn-lg btn-ht w-100 mt-3" data-bs-target="#QRCode" data-bs-toggle="modal" data-bs-dismiss="modal">顯示QR Code</a>
+							</div>
+						</div>
+					</div>
+				</div>
+		    </div>
+		  </div>
+		</div>
+
+		<!-- 新增數據 -->
+		<div class="modal fade" id="addData" aria-hidden="true" aria-labelledby="addDataLabel" tabindex="-2">
+		  <div class="modal-dialog modal-dialog-centered">
+		    <div class="modal-content">
+		      <div class="modal-body">
+					<div class="container-fluid">
+						<div class="row justify-content-center">
+							<div class="col-12 p-5">
+								<div class="input-group mb-3">
+								  <span class="input-group-text">測量時間</span>
+								  <input type="text" class="form-control">
+								</div>
+								<div class="input-group mb-3">
+								  <span class="input-group-text">心率</span>
+								  <input type="text" class="form-control">
+								</div>
+								<button type="button" class="btn btn-ht w-100" data-bs-dismiss="modal">確認新增</button>
+							</div>
+						</div>
+					</div>
+				</div>
+		    </div>
+		  </div>
+		</div>
+
+		<!-- 顯示 QR Code -->
+		<div class="modal fade" id="QRCode" aria-hidden="true" aria-labelledby="QRCodeLabel" tabindex="-3">
+		  <div class="modal-dialog modal-dialog-centered">
+		    <div class="modal-content">
+		      <div class="modal-body">
+					<div class="container-fluid">
+						<div class="row justify-content-center">
+							<div class="col-6">
+								<img src="https://upload.wikimedia.org/wikipedia/commons/thumb/4/4e/QRcode_image.svg/640px-QRcode_image.svg.png" alt="QR Code" class="img-fluid">
+							</div>
+						</div>
+					</div>
+				</div>
+		    </div>
+		  </div>
+		</div>
+
+	<!-- modal end -->
+
+	<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
+	<script type="text/javascript" src="https://code.jquery.com/jquery-1.11.0.min.js"></script>
+	<script type="text/javascript" src="https://code.jquery.com/jquery-migrate-1.2.1.min.js"></script>
+	<script type="text/javascript" src="js/slick.min.js"></script>
+	<script type="text/javascript" src="js/index.js"></script>
+
+</body>
+</html>
